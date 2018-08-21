@@ -17,4 +17,4 @@ RUN apt-get install -y docker-ce
 RUN mkdir -p out && git clone -b master https://github.com/hyperledger/iroha --depth=1
 
 WORKDIR /iroha
-CMD cd /iroha/example/java && git pull && sed -i 's/usr\/bin\/env bash/bin\/bash -e/' prepare.sh && ./build_library.sh && cp -R dist /out/
+CMD cd /iroha/example/java && git pull && sed -i 's/usr\/bin\/env bash/bin\/bash -e/' prepare.sh && ./build_library.sh && cp -R dist /out/ && chmod -R 777 /out/*

@@ -33,3 +33,6 @@
 
 # VIM
 *~
+
+# NOT INCLUDING OUTPUT
+/out/
