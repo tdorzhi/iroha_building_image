@@ -1,0 +1,1 @@
+# iroha_building_image
